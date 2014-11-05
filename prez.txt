@@ -1,0 +1,9 @@
+Bonjour à tous,
+Aujourd'hui, nous allons parler ensemble de Scala, 
+Voir ce qu'on peut en faire
+Et ce qu'il ne faut pas faire.
+Plan du jour:
+I.   Un langage objet
+II.  λ
+III. Sugar, sugar, sugar
+Et maintenant, on code...
