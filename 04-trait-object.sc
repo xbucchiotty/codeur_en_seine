@@ -12,10 +12,20 @@ case object NaN extends Montant{
 
 case class Valide(valeur: Double, devise: String) extends Montant{
 
-  def plus(autre: Montant) = autre match{
-    case Valide(autreValeur,autreDevise) if autreDevise == devise => copy(valeur = valeur + autreValeur)
-    case _ => NaN
-  }
+  def plus(autre: Montant) = 
+    if(autre == NaN) {
+        NaN
+    } else {
+
+      val autreMontant = autre.asInstanceOf[Valide]
+      val autreValeur = autreMontant.valeur
+      val autreDevise = autreMontant.devise
+
+      if( autreDevise == devise) 
+      	copy(valeur = valeur + autreValeur) 
+      else 
+        NaN
+    }
 }
 
 
