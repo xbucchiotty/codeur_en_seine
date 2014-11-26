@@ -1,4 +1,4 @@
-Bonjour à tous,
+Bonjour à tous #codeurs2014,
 Aujourd'hui, nous allons parler ensemble de Scala, 
 Voir ce qu'on peut en faire
 Et ce qu'il ne faut pas faire.
